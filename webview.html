@@ -46,9 +46,12 @@
             }
         );
 
+        const textureLoader = new THREE.TextureLoader();
+        const backgroundTexture = textureLoader.load('VT-XNH9vJps.jpg');
+        scene.background = backgroundTexture;
+
         camera.position.z = 5;
 
-        
     </script>
 </body>
 </html>
