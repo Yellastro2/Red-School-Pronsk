@@ -973,6 +973,106 @@
       "type": "image",
       "year": null,
       "yearApprox": false
+    },
+    {
+      "src": "./пронск/1857_g_karta_plan_arkhiv_inzhenernogo_departamenta_pronsk_kreml_kitaj_gorod_pronja.jpg",
+      "title": "План Пронска · 1857",
+      "description": "Карта-план Пронска с обозначением кремля, Китай-города и реки Прони. Датировка 1857 годом указана в названии файла.",
+      "source": "",
+      "category": "city",
+      "type": "image",
+      "year": 1857,
+      "yearApprox": false
+    },
+    {
+      "src": "./пронск/pronsk_rjazan_gub_fotootkrytka.jpg",
+      "title": "Пронск, Рязанская губерния · фотооткрытка",
+      "description": "Историческая фотооткрытка с видом Пронска. Точная дата выпуска и издатель не установлены.",
+      "source": "",
+      "category": "city",
+      "type": "image",
+      "year": 1900,
+      "yearApprox": true
+    },
+    {
+      "src": "./пронск/pronsk_rjazan_gub_fotootkrytka_01.jpg",
+      "title": "Фотооткрытка Пронска № 1 · лицевая сторона",
+      "description": "Лицевая сторона исторической фотооткрытки. Датировка приблизительная.",
+      "source": "",
+      "category": "city",
+      "type": "image",
+      "year": 1900,
+      "yearApprox": true
+    },
+    {
+      "src": "./пронск/pronsk_rjazan_gub_fotootkrytka_01-2.jpg",
+      "title": "Фотооткрытка Пронска № 1 · оборотная сторона",
+      "description": "Оборотная сторона этой же фотооткрытки. Датировка приблизительная.",
+      "source": "",
+      "category": "city",
+      "type": "image",
+      "year": 1900,
+      "yearApprox": true
+    },
+    {
+      "src": "./пронск/pronsk_rjazan_gub_fotootkrytka_02.jpg",
+      "title": "Фотооткрытка Пронска № 2 · лицевая сторона",
+      "description": "Лицевая сторона исторической фотооткрытки. Датировка приблизительная.",
+      "source": "",
+      "category": "city",
+      "type": "image",
+      "year": 1900,
+      "yearApprox": true
+    },
+    {
+      "src": "./пронск/pronsk_rjazan_gub_fotootkrytka_02-2.jpg",
+      "title": "Фотооткрытка Пронска № 2 · оборотная сторона",
+      "description": "Оборотная сторона этой же фотооткрытки. Датировка приблизительная.",
+      "source": "",
+      "category": "city",
+      "type": "image",
+      "year": 1900,
+      "yearApprox": true
+    },
+    {
+      "src": "./пронск/pronsk_rjazan_gub_fotootkrytka_03.jpg",
+      "title": "Фотооткрытка Пронска № 3 · лицевая сторона",
+      "description": "Лицевая сторона исторической фотооткрытки. Датировка приблизительная.",
+      "source": "",
+      "category": "city",
+      "type": "image",
+      "year": 1900,
+      "yearApprox": true
+    },
+    {
+      "src": "./пронск/pronsk_rjazan_gub_fotootkrytka_03-2.jpg",
+      "title": "Фотооткрытка Пронска № 3 · оборотная сторона",
+      "description": "Оборотная сторона этой же фотооткрытки. Датировка приблизительная.",
+      "source": "",
+      "category": "city",
+      "type": "image",
+      "year": 1900,
+      "yearApprox": true
+    },
+    {
+      "src": "./пронск/pronsk_rjazan_gub_kladbishche_fotootkrytka_khram_cerkv.jpg",
+      "title": "Пронск · кладбище и церковь · фотооткрытка (лицевая сторона)",
+      "description": "Лицевая сторона фотооткрытки с изображением церкви и кладбища в Пронске. Датировка приблизительная.",
+      "source": "",
+      "category": "city",
+      "type": "image",
+      "year": 1900,
+      "yearApprox": true
+    },
+    {
+      "src": "./пронск/pronsk_rjazan_gub_kladbishche_fotootkrytka_khram_cerkv-2.jpg",
+      "title": "Пронск · кладбище и церковь · фотооткрытка (оборотная сторона)",
+      "description": "Оборотная сторона этой же фотооткрытки. Датировка приблизительная.",
+      "source": "",
+      "category": "city",
+      "type": "image",
+      "year": 1900,
+      "yearApprox": true
     }
   ],
   "plans": [
