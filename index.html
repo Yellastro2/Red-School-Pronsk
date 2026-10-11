@@ -1,26 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3D Model Viewer</title>
-    <style>
-        body { margin: 0; }
-        canvas { display: block; }
-    </style>
-	<title>3D Model Viewer</title> <style> body { margin: 0; height: 100vh; overflow: hidden; } model-viewer { width: 100%; height: 100%; } </style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<meta content="#f2eee5" name="theme-color"/>
+<meta content="Красная школа Пронска — история утраченного здания, 3D-реконструкция, архивные фотографии и документы." data-content-content="home.seo.description" name="description"/>
+<title>Красная школа — утраченное наследие Пронска</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="./site/style.css" rel="stylesheet"/>
+<script defer="" src="./site/common.js"></script><script defer="True" src="./site/content-loader.js"></script>
+<script src="./site/model-viewer-loader.js" type="module"></script>
 </head>
-<body>
+<body class="page-home">
+<a class="skip-link" href="#content">К содержимому</a>
+<div class="announcement"><div class="container announcement-inner"><span data-content="site.announcement.0">ЦИФРОВОЙ АРХИВ</span><span data-content="site.announcement.1">ПРОНСК · РЯЗАНСКАЯ ОБЛАСТЬ</span><span data-content="site.announcement.2">1906—1910</span></div></div>
+<header class="site-header">
+<div class="container header-inner">
+<a aria-label="Красная школа — на главную" class="wordmark" href="./index.html"><span class="wordmark-icon">К<span>Ш</span></span><span class="wordmark-meta"><span data-content="site.wordmark">КРАСНАЯ ШКОЛА </span><small data-content="site.wordmarkSubtitle">ИСТОРИЧЕСКИЙ ПРОЕКТ</small></span></a>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню" class="nav-toggle" type="button"><span></span><span></span><span></span></button>
+<nav aria-label="Основная навигация" class="main-nav" id="main-nav"><a aria-current="page" class="active" href="./index.html"><span data-content="site.nav.0">Главная</span></a><a href="./gallery.html"><span data-content="site.nav.1">Галерея</span></a><a href="./archive.html"><span data-content="site.nav.2">Архив</span></a><a href="./pronsk.html"><span data-content="site.nav.3">Пронск</span></a><a class="nav-external" href="https://github.com/Yellastro2/Red-School-Pronsk" rel="noopener noreferrer" target="_blank"><span data-content="site.nav.4">GitHub </span><span aria-hidden="true">↗</span></a></nav>
+</div>
+</header>
+<main id="content">
+<section class="hero container">
+<div class="hero-heading">
+<div class="hero-title-block"><div class="eyebrow"><span class="accent-line"></span><span data-content="home.hero.eyebrow"> АРХИТЕКТУРНОЕ НАСЛЕДИЕ РЯЗАНСКОЙ ЗЕМЛИ</span></div><h1><span data-content="home.hero.titleLine1">Красная</span><br/><em data-content="home.hero.titleLine2">школа</em><span class="hero-point" data-content="home.hero.titlePoint">.</span></h1></div>
+<div class="hero-intro"><span class="mini-rule"></span><p class="intro-lead" data-content="home.hero.subtitle">Утраченное наследие Пронска</p><p data-content="home.hero.description">История женской прогимназии имени В. Н. фон Дервиз — от первых классов до исчезновения здания.</p><div class="hero-intro-bottom"><span data-content="home.hero.location">Пронск</span><span data-content="home.hero.time">1904 — XX век</span></div></div>
+</div>
+<div aria-label="3D-реконструкция Красной школы" class="model-section" id="model-section" role="region">
+<div class="model-topline"><div><span class="topline-dot"></span><span data-content="home.model.topline"> ИНТЕРАКТИВНАЯ РЕКОНСТРУКЦИЯ</span></div><div data-content="home.model.period">ОБЛИК ЗДАНИЯ · ОК. 1906–1910</div></div>
+<div class="model-stage" id="model-stage">
+<model-viewer alt="Трёхмерная реконструкция Красной школы в Пронске" ar-status="not-presenting" camera-controls="" data-content-alt="home.model.alt" data-content-poster="home.model.poster" data-content-src="home.model.src" environment-image="neutral" exposure="1" id="school-model" interaction-prompt="auto" loading="auto" poster="./галерея/photo_1.jpg" reveal="manual" shadow-intensity="1" src="./red_school1_2.glb" touch-action="pan-y">
+<button aria-label="Загрузить интерактивную 3D-модель" class="model-poster" slot="poster" type="button"><span aria-hidden="true" class="poster-play">↻</span><span class="poster-label"><strong data-content="home.model.cta">Исследовать здание в 3D</strong><small data-content="home.model.hint">Нажмите, чтобы загрузить модель · вращайте для осмотра</small></span></button>
+<div class="model-progress" slot="progress-bar"><div class="model-progress-bar"></div></div>
+</model-viewer>
+<div aria-live="polite" class="model-status" hidden="" id="model-status" role="status"></div>
+<div class="model-controls"><button aria-label="Развернуть 3D-просмотрщик" class="model-tool" id="expand-model" title="Развернуть на всё окно" type="button"><span aria-hidden="true">⤢</span> <span class="tool-label">Развернуть</span></button><button aria-label="Включить полноэкранный режим" class="model-tool" id="fullscreen-model" title="Полноэкранный режим" type="button"><span aria-hidden="true">⛶</span> <span class="tool-label">Полный экран</span></button></div>
+<button aria-label="Закрыть развёрнутый просмотр" class="model-close" id="close-model" type="button">✕</button>
+<div class="model-stage-index" data-content="home.model.stageIndex">01 / РЕКОНСТРУКЦИЯ</div>
+</div>
+<div class="model-bottomline"><span data-content="home.model.caption">Воссоздано по историческим фотографиям и доступным документам</span><span data-content="home.model.disclaimer">МОДЕЛЬ НЕ ПРЕТЕНДУЕТ НА АБСОЛЮТНУЮ ТОЧНОСТЬ</span></div>
+</div>
+<div class="hero-footnote"><span data-content="home.scroll.index">01 — ВИРТУАЛЬНАЯ ЭКСПОЗИЦИЯ</span><a href="#history"><span data-content="home.scroll.hint">ЛИСТАЙТЕ, ЧТОБЫ УЗНАТЬ ИСТОРИЮ </span><span aria-hidden="true">↓</span></a></div>
+</section>
+<!-- Четыре главы истории. Фотографии 02–04 предварительные: датировка оригиналов пока не подтверждена. -->
+<section aria-labelledby="history-start-title" class="story-section story-section--light section-space" data-chapter="0" id="history">
+<div class="container story-grid">
+<figure class="story-photo-wrap">
+<img alt="Исторический вид здания Красной школы из архива Е. А. Калашникова" class="story-photo" data-content-alt="home.chapters.0.photo.alt" data-content-src="home.chapters.0.photo.src" decoding="async" loading="lazy" src="./галерея/Красная школа. из архива Е.А.Калашникова.jpg"/>
+<figcaption class="image-caption"><span data-content="home.chapters.0.photo.caption">ФОТОГРАФИЯ ИЗ АРХИВА Е. А. КАЛАШНИКОВА</span><span data-content="home.chapters.0.photo.date">ДАТА СЪЁМКИ НЕ УСТАНОВЛЕНА</span></figcaption>
+</figure>
+<div class="story-content">
+<p class="eyebrow eyebrow-dark"><span class="accent-line"></span> ГЛАВА <span data-content="home.chapters.0.number">01</span> <span class="chapter-divider">/</span> <span data-content="home.chapters.0.period">1904–1907</span></p>
+<h2 id="history-start-title"><span data-content="home.chapters.0.headline.before">Всё началось </span><em data-content="home.chapters.0.headline.highlight">в 1904-м</em><span data-content="home.chapters.0.headline.after"></span></h2>
+<p class="story-lead" data-content="home.chapters.0.lead">В Пронске открылась женская прогимназия, созданная Павлом Павловичем фон Дервизом и названная в честь его матери — Веры Николаевны.</p>
+<div class="story-paragraphs" data-content-paragraphs="home.chapters.0.paragraphs"><p>Первые занятия проходили в деревянном здании. В декабре 1904 года его уничтожил пожар — но история школы только начиналась.</p><p>На средства фон Дервиза возвели просторный кирпичный корпус. К 1907 году в прогимназии было уже семь классов и около 170 учениц.</p></div>
 
-	<!-- Import the component -->
-	<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<a class="text-link" data-content-href="home.chapters.0.link.href" href="./archive.html"><span data-content="home.chapters.0.link.label">Документы об основании </span><span aria-hidden="true">↗</span></a>
+</div>
+</div>
+</section>
+<section aria-labelledby="history-theatre-title" class="story-section story-section--paper section-space" data-chapter="1">
+<div class="container story-grid story-grid--reversed">
+<figure class="story-photo-wrap">
+<img alt="Фотоматериал из коллекции Красной школы; дата съёмки уточняется" class="story-photo" data-content-alt="home.chapters.1.photo.alt" data-content-src="home.chapters.1.photo.src" decoding="async" loading="lazy" src="./галерея/photo_2024-12-19_20-28-10.jpg"/>
+<figcaption class="image-caption"><span data-content="home.chapters.1.photo.caption">ИЗ ФОТОКОЛЛЕКЦИИ ПРОЕКТА</span><span data-content="home.chapters.1.photo.date">АТРИБУЦИЯ УТОЧНЯЕТСЯ</span></figcaption>
+</figure>
+<div class="story-content">
+<p class="eyebrow eyebrow-dark"><span class="accent-line"></span> ГЛАВА <span data-content="home.chapters.1.number">02</span> <span class="chapter-divider">/</span> <span data-content="home.chapters.1.period">НАЧАЛО XX ВЕКА</span></p>
+<h2 id="history-theatre-title"><span data-content="home.chapters.1.headline.before">Здесь была </span><em data-content="home.chapters.1.headline.highlight">не только школа</em><span data-content="home.chapters.1.headline.after"></span></h2>
+<p class="story-lead" data-content="home.chapters.1.lead">Гимназия разрасталась: к главному зданию добавлялись корпуса, в том числе помещения для театра и библиотеки.</p>
+<div class="story-paragraphs" data-content-paragraphs="home.chapters.1.paragraphs"><p>Павел фон Дервиз занимался не только обучением. В школе звучала музыка, ставились спектакли и оперы — для небольшого уездного города это было заметное культурное событие.</p><p>После революции 1917 года частная гимназия стала советской школой. В 1920-е годы менялись программа, ступени образования и сама школьная жизнь.</p></div>
 
-	<!-- Use it like any other HTML element -->
-	<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" 
-		src="red_school1_2.glb" 
-		poster="photo_1.jpg" 
-		shadow-intensity="1" 
-		camera-controls touch-action="pan-y">
-	</model-viewer>
-</body>
-</html>
+<a class="text-link" data-content-href="home.chapters.1.link.href" href="./gallery.html"><span data-content="home.chapters.1.link.label">Посмотреть фотогалерею </span><span aria-hidden="true">↗</span></a>
+</div>
+</div>
+</section>
+<section aria-labelledby="history-war-title" class="story-section story-section--light section-space" data-chapter="2">
+<div class="container story-grid">
+<figure class="story-photo-wrap">
+<img alt="Фотография из коллекции проекта; точный период съёмки не установлен" class="story-photo" data-content-alt="home.chapters.2.photo.alt" data-content-src="home.chapters.2.photo.src" decoding="async" loading="lazy" src="./галерея/photo_2024-12-19_21-17-45.jpg"/>
+<figcaption class="image-caption"><span data-content="home.chapters.2.photo.caption">ИЗ ФОТОКОЛЛЕКЦИИ ПРОЕКТА</span><span data-content="home.chapters.2.photo.date">АТРИБУЦИЯ УТОЧНЯЕТСЯ</span></figcaption>
+</figure>
+<div class="story-content">
+<p class="eyebrow eyebrow-dark"><span class="accent-line"></span> ГЛАВА <span data-content="home.chapters.2.number">03</span> <span class="chapter-divider">/</span> <span data-content="home.chapters.2.period">1941 — ПОСЛЕВОЕННЫЕ ГОДЫ</span></p>
+<h2 id="history-war-title"><span data-content="home.chapters.2.headline.before">Огонь, война и </span><em data-content="home.chapters.2.headline.highlight">возрождение</em><span data-content="home.chapters.2.headline.after"></span></h2>
+<p class="story-lead" data-content="home.chapters.2.lead">В годы Великой Отечественной войны школьное здание использовалось как госпиталь.</p>
+<div class="story-paragraphs" data-content-paragraphs="home.chapters.2.paragraphs"><p>В декабре 1941 года его вновь охватил пожар. После войны школа возвращалась к жизни через долгое восстановление; по опубликованным краеведческим сведениям, работы завершили в 1959 году.</p><p>Позднее здание расширяли и перестраивали, надстроив до четырёх этажей. Его облик всё дальше отходил от первоначального проекта.</p></div>
+
+<a class="text-link" data-content-href="home.chapters.2.link.href" href="./gallery.html"><span data-content="home.chapters.2.link.label">Фотографии разных лет </span><span aria-hidden="true">↗</span></a>
+</div>
+</div>
+</section>
+<section aria-labelledby="history-end-title" class="story-section story-section--paper section-space" data-chapter="3">
+<div class="container story-grid story-grid--reversed">
+<figure class="story-photo-wrap">
+<img alt="Фотоматериал из собрания Красной школы; дата и обстоятельства съёмки уточняются" class="story-photo" data-content-alt="home.chapters.3.photo.alt" data-content-src="home.chapters.3.photo.src" decoding="async" loading="lazy" src="./галерея/photo_2024-12-21_20-53-19.jpg"/>
+<figcaption class="image-caption"><span data-content="home.chapters.3.photo.caption">ИЗ ФОТОКОЛЛЕКЦИИ ПРОЕКТА</span><span data-content="home.chapters.3.photo.date">АТРИБУЦИЯ УТОЧНЯЕТСЯ</span></figcaption>
+</figure>
+<div class="story-content">
+<p class="eyebrow eyebrow-dark"><span class="accent-line"></span> ГЛАВА <span data-content="home.chapters.3.number">04</span> <span class="chapter-divider">/</span> <span data-content="home.chapters.3.period">1989 — РУБЕЖ ВЕКОВ</span></p>
+<h2 id="history-end-title"><span data-content="home.chapters.3.headline.before">Здание, которого больше </span><em data-content="home.chapters.3.headline.highlight">нет</em><span data-content="home.chapters.3.headline.after"></span></h2>
+<p class="story-lead" data-content="home.chapters.3.lead">В 1989 году школа переехала в новое здание. Старый корпус остался без привычной жизни.</p>
+<div class="story-paragraphs" data-content-paragraphs="home.chapters.3.paragraphs"><p>Постепенно он пустел и разрушался. К концу XX века бывшая гимназия была утрачена: большое кирпичное здание, десятилетиями определявшее облик Пронска, снесли.</p><p>Сегодня сохранившиеся фотографии, архивные документы и 3D-реконструкция помогают представить школу такой, какой её знали разные поколения горожан.</p></div>
+
+<a class="text-link" data-content-href="home.chapters.3.link.href" href="#model-section"><span data-content="home.chapters.3.link.label">Вернуться к 3D-реконструкции </span><span aria-hidden="true">↑</span></a>
+</div>
+</div>
+</section>
+<section class="collections-section section-space" id="collections"><div class="container"><div class="section-heading"><div><p class="eyebrow"><span class="accent-line"></span><span data-content="home.collections.eyebrow"> СОБРАНИЕ ПРОЕКТА</span></p><h2><span data-content="home.collections.title.before">История в </span><em data-content="home.collections.title.highlight">деталях</em></h2></div><p class="section-description" data-content="home.collections.description">Фотографии, документы и следы прошлого — всё, что удалось собрать о Красной школе и её городе.</p></div>
+<div class="collections-grid">
+<a class="collection-card" data-content-href="home.collections.items.0.href" href="./gallery.html"><div class="collection-image"><img alt="Историческое фото Красной школы" data-content-alt="home.collections.items.0.image.alt" data-content-src="home.collections.items.0.image.src" loading="lazy" src="./галерея/Красная школа. из архива Е.А.Калашникова.jpg"/><span class="collection-num" data-content="home.collections.items.0.number">01</span></div><div class="collection-card-body"><div><h3 data-content="home.collections.items.0.title">Фотогалерея</h3><p data-content="home.collections.items.0.description">Фотографии и видео</p></div><span aria-hidden="true" class="circle-arrow">↗</span></div></a>
+<a class="collection-card" data-content-href="home.collections.items.1.href" href="./archive.html"><div class="collection-image"><img alt="Архивный документ 1903 года" data-content-alt="home.collections.items.1.image.alt" data-content-src="home.collections.items.1.image.src" loading="lazy" src="./доки/сканы/1903_09_16_заседание_думы.jpg"/><span class="collection-num" data-content="home.collections.items.1.number">02</span></div><div class="collection-card-body"><div><h3 data-content="home.collections.items.1.title">Документы</h3><p data-content="home.collections.items.1.description">Дела, планы, свидетельства</p></div><span aria-hidden="true" class="circle-arrow">↗</span></div></a>
+<a class="collection-card" data-content-href="home.collections.items.2.href" href="./pronsk.html"><div class="collection-image"><img alt="Историческая панорама Пронска" data-content-alt="home.collections.items.2.image.alt" data-content-src="home.collections.items.2.image.src" loading="lazy" src="./галерея/Панорама города Пронска. ХХ в..jpg"/><span class="collection-num" data-content="home.collections.items.2.number">03</span></div><div class="collection-card-body"><div><h3 data-content="home.collections.items.2.title">Город Пронск</h3><p data-content="home.collections.items.2.description">Городские виды и краеведение</p></div><span aria-hidden="true" class="circle-arrow">↗</span></div></a>
+</div></div></section>
+<section class="quote-section"><div class="container quote-content"><span class="quote-star">✳</span><blockquote><span data-content="home.quote.line1">Память о месте сохраняется,</span><br/><span data-content="home.quote.line2">пока существует </span><em data-content="home.quote.highlight">интерес к его истории.</em></blockquote><p data-content="home.quote.attribution">НЕЗАВИСИМЫЙ ИСТОРИКО-ИССЛЕДОВАТЕЛЬСКИЙ ПРОЕКТ</p></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-main"><div><a class="footer-brand" href="./index.html"><span data-content="site.footer.title">Красная школа</span><span>.</span></a><p><span data-content="site.footer.line1">История и виртуальная реконструкция</span><br/><span data-content="site.footer.line2">утраченного здания в Пронске.</span></p></div><nav aria-label="Навигация в подвале"><a data-content="site.nav.0" href="./index.html">Главная</a><a data-content="site.nav.1" href="./gallery.html">Галерея</a><a data-content="site.nav.2" href="./archive.html">Архив</a><a data-content="site.nav.3" href="./pronsk.html">Пронск</a></nav></div><div class="container footer-bottom"><span data-content="site.footer.copyright">© ПРОЕКТ «КРАСНАЯ ШКОЛА»</span><span data-content="site.footer.sources">МАТЕРИАЛЫ И ИСТОЧНИКИ — В АРХИВЕ ПРОЕКТА</span><a data-content="site.footer.repo" href="https://github.com/Yellastro2/Red-School-Pronsk" rel="noopener noreferrer" target="_blank">ОТКРЫТЫЙ РЕПОЗИТОРИЙ ↗</a></div></footer>
+</body></html>
