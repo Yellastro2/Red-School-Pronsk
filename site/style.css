@@ -67,3 +67,78 @@
 @media(max-width:1020px){.plans-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}}
 @media(max-width:700px){.plans-section{padding-top:40px}.plans-heading-row{display:block}.plans-count{display:block;margin-top:14px}.plans-grid{gap:10px}.plan-figure{height:175px;padding:10px}.plan-card .media-meta h3{font-size:19px}.lightbox-zoom{font-size:10px;min-height:35px;padding:0 11px}}
 @media(max-width:380px){.plans-grid{grid-template-columns:1fr}.plan-figure{height:260px}}
+
+
+/* Источники и обратная связь в подвале */
+.footer-knowledge {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(250px, 0.65fr);
+  gap: clamp(32px, 6vw, 90px);
+  border-top: 1px solid #c9c2b4;
+  padding-top: 30px;
+  padding-bottom: 37px;
+}
+.footer-knowledge-column {min-width: 0}
+.footer-knowledge-heading {
+  margin: 0 0 12px;
+  font: 700 10px/1.55 var(--sans);
+  text-transform: uppercase;
+  letter-spacing: .17em;
+  color: var(--brick);
+}
+.footer-knowledge-intro {
+  max-width: 560px;
+  margin: 0 0 18px;
+  font-size: 12px;
+  line-height: 1.85;
+  color: #5f5d56;
+}
+.footer-knowledge-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0;
+  row-gap: 8px;
+  font-size: 11px;
+  line-height: 1.7;
+  color: #484a45;
+}
+.footer-knowledge-links > * {color: inherit}
+.footer-knowledge-links > *:not(:last-child)::after {
+  content: '·';
+  margin: 0 12px;
+  color: #b19e89;
+  text-decoration: none;
+  display: inline-block;
+}
+.footer-knowledge-links a {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #b5a99a;
+  text-underline-offset: 3px;
+}
+.footer-knowledge a:hover, .footer-knowledge a:focus-visible {color: var(--brick)}
+.footer-knowledge-note {
+  font-size: 10px;
+  color: #88837a;
+  line-height: 1.8;
+  margin: 15px 0 0;
+}
+.footer-contact-links {display: flex; flex-direction: column; align-items: flex-start; gap: 11px}
+.footer-contact-links a {
+  color: #383b36;
+  text-decoration: none;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #bbb2a5;
+  font-size: 13px;
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+.footer-contact-links a span {color: var(--brick);padding-left: 5px}
+@media (max-width: 700px) {
+  .footer-knowledge {grid-template-columns: 1fr; gap: 31px; padding-top: 28px; padding-bottom: 31px}
+  .footer-knowledge-intro {font-size: 11px;margin-bottom: 14px}
+  .footer-knowledge-links {font-size: 11px;row-gap: 7px}
+  .footer-knowledge-links > *:not(:last-child)::after {margin: 0 8px}
+  .footer-contact-links a {font-size: 12px}
+}
