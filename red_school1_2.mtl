@@ -1,4 +1,4 @@
-# Blender 4.3.2 MTL File: 'red_school1_2.blend'
+# Blender 5.2.2 LTS MTL File: 'red_school1_2.blend'
 # www.blender.org
 
 newmtl a_main_mat
@@ -9,4 +9,4 @@ Ke 0.000000 0.000000 0.000000
 Ni 1.500000
 d 1.000000
 illum 2
-map_Kd athlas2.jpg
+map_Kd atlas2_metal_roof_x5.dds
