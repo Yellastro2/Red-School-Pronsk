@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /private/
 Allow: /
 
-Sitemap: https://yellastro2.github.io/Red-School-Pronsk/sitemap.xml
+Sitemap: https://yellastro2.github.io/Red-School-Pronsk/Sitemap.xml
