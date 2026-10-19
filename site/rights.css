@@ -1,0 +1,18 @@
+/* Стили страницы о правах. Не затрагивают остальные страницы. */
+.rights-layout{padding-top:42px;padding-bottom:105px;max-width:1000px}
+.rights-lead{font:500 clamp(25px,3.2vw,38px)/1.25 var(--serif);max-width:800px;margin:0 0 30px}
+.rights-intro{color:var(--muted);font-size:13px;line-height:2;max-width:760px;margin-bottom:45px}
+.rights-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px;margin-bottom:40px}
+.rights-card{background:var(--paper-light);border:1px solid var(--border);padding:25px 28px}
+.rights-card .rights-tag{font-size:10px;color:var(--brick);font-weight:700;letter-spacing:.13em}
+.rights-card h2{font:500 35px/1.1 var(--serif);margin:13px 0}
+.rights-card p{font-size:12px;color:var(--muted);line-height:1.85;margin:0 0 15px}
+.rights-card a,.rights-article a{color:var(--brick);text-decoration:underline;text-underline-offset:3px}
+.rights-article{max-width:850px}
+.rights-article section{border-top:1px solid var(--border);padding:31px 0 18px}
+.rights-article h2{font:500 36px/1.12 var(--serif);margin:0 0 15px}
+.rights-article p,.rights-article li{font-size:13px;line-height:1.95;color:#62615a}
+.rights-article ul{padding-left:23px;margin-top:10px;margin-bottom:20px}
+.rights-article strong{color:var(--ink)}
+.rights-small{font-size:11px!important;color:var(--muted)!important}
+@media(max-width:700px){.rights-grid{grid-template-columns:1fr}.rights-layout{padding-bottom:70px}.rights-card{padding:22px}.rights-article h2{font-size:31px}}
